@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Lopang - Beranda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Desa Lopang</div>
+        <div class="menu-toggle">☰</div>
+        <div class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#kenalan">Kenalan Desa</a>
+            <a href="#dusun">Pilih Dusun</a>
+            <a href="#potensi">Potensi</a>
+            <a href="#umkm">UMKM</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#peta">Maps</a>
+            <a href="#kontak">Hubungi</a>
+        </div>
+    </nav>
+
+    <!-- 1. Beranda -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>Desa Lopang</h1>
+            <p>Menjelajahi harmoni alam, kekayaan budaya, dan potensi tak terbatas. Tempat dimana tradisi bertemu dengan visi masa depan.</p>
+            <a href="#kenalan" class="btn">Mulai Menjelajah</a>
+        </div>
+    </section>
+
+    <!-- 2. Kenalan dengan Desa -->
+    <section id="kenalan" class="section-padding">
+        <h2 class="section-title">Kenalan dengan Desa</h2>
+        
+        <!-- Sejarah -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Desa Berdiri</h3>
+                <p>Desa ini didirikan oleh para tetua adat pada abad ke-19 dengan pembukaan lahan pertama di sekitar sumber air utama.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Perkembangan</h3>
+                <p>Mengalami pertumbuhan pesat di sektor pertanian pada era 80-an dan mulai membentuk struktur administrasi pemerintahan desa yang formal.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Saat Ini</h3>
+                <p>Menjadi desa yang mandiri dengan berfokus pada pemberdayaan masyarakat melalui UMKM lokal dan optimalisasi hasil bumi.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Visi Masa Depan</h3>
+                <p>Mewujudkan "Desa Digital Pintar" yang mempertahankan keasrian alam namun terintegrasi dengan teknologi untuk memajukan ekonomi warga.</p>
+            </div>
+        </div>
+
+        <!-- Lembaga & Demografi -->
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>Lembaga Desa</h4>
+                <ul>
+                    <li>Badan Permusyawaratan Desa (BPD)</li>
+                    <li>Lembaga Pemberdayaan Masyarakat (LPMD)</li>
+                    <li>Pembinaan Kesejahteraan Keluarga (PKK)</li>
+                    <li>Karang Taruna "Karya Bakti"</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>Demografi Penduduk</h4>
+                <ul>
+                    <li><strong>Total Penduduk:</strong> 3.450 Jiwa</li>
+                    <li><strong>Laki-laki:</strong> 1.700 Jiwa</li>
+                    <li><strong>Perempuan:</strong> 1.750 Jiwa</li>
+                    <li><strong>Mayoritas Pekerjaan:</strong> Petani & Pelaku UMKM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Pilih Dusun -->
+    <section id="dusun" class="section-padding bg-light">
+        <h2 class="section-title">Pilih Dusun</h2>
+        <p class="section-subtitle">Desa Lopang terdiri dari 10 dusun yang masing-masing memiliki keunikan dan potensi unggulan tersendiri.</p>
+        
+        <div class="card-grid">
+            <!-- Dusun 1 -->
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title">Dusun Wringinom</h3>
+                    <p class="card-subtitle">"Kampung Juwet"</p>
+                    <a href="dusun-detail.html" class="btn" style="margin-top: 1rem;">Jelajahi</a>
+                </div>
+            </div>
+            <!-- Dusun 2 -->
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title">Dusun Krajan</h3>
+                    <p class="card-subtitle">"Sentra Pertanian"</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Jelajahi</a>
+                </div>
+            </div>
+            <!-- Dusun 3 -->
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title">Dusun Sukamaju</h3>
+                    <p class="card-subtitle">"Pusat Kerajinan"</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Jelajahi</a>
+                </div>
+            </div>
+            <!-- Dusun 4 -->
+            <div class="card">
+                <div class="card-body" style="text-align: center;">
+                    <h3 class="card-title">Dusun Karangrejo</h3>
+                    <p class="card-subtitle">"Sentra Kuliner"</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Jelajahi</a>
+                </div>
+            </div>
+            <!-- Dusun 5 s.d 10 (Placeholder) -->
+            <script>
+                // Generate 6 placeholder dusun for demonstration
+                for(let i=5; i<=10; i++) {
+                    document.write(`
+                    <div class="card">
+                        <div class="card-body" style="text-align: center;">
+                            <h3 class="card-title">Dusun ${i}</h3>
+                            <p class="card-subtitle">"Potensi Unggulan"</p>
+                            <a href="#" class="btn" style="margin-top: 1rem;">Jelajahi</a>
+                        </div>
+                    </div>`);
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- 4. Lihat Potensi Dusun -->
+    <section id="potensi" class="section-padding">
+        <h2 class="section-title">Potensi Desa</h2>
+        <div class="info-grid" style="margin-top: 0;">
+            <div class="info-card">
+                <h4>🌾 Pertanian Berkelanjutan</h4>
+                <p>Memiliki lahan sawah tadah hujan dan irigasi yang menghasilkan padi kualitas premium serta tanaman palawija unggulan.</p>
+            </div>
+            <div class="info-card">
+                <h4>🏞 Pariwisata Alam</h4>
+                <p>Terdapat area perbukitan dan sungai yang memiliki potensi besar untuk dikembangkan menjadi wisata edukasi dan alam.</p>
+            </div>
+            <div class="info-card">
+                <h4>🛍 Ekonomi Kreatif (UMKM)</h4>
+                <p>Masyarakat yang produktif dalam mengolah hasil bumi menjadi produk bernilai jual tinggi (makanan ringan & kerajinan).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Temukan UMKM -->
+    <section id="umkm" class="section-padding bg-light">
+        <h2 class="section-title">Temukan UMKM</h2>
+        <div class="card-grid">
+            
+            <!-- UMKM 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596647970795-02195f1901a1?auto=format&fit=crop&w=600&q=80" alt="Keripik" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Keripik Pisang</h3>
+                    <div class="rating">★★★★☆</div>
+                    <p class="card-desc">"Memproduksi keripik pisang aneka rasa berkualitas sejak 2015."</p>
+                    <a href="umkm-detail.html" class="btn btn-full">Detail</a>
+                </div>
+            </div>
+
+            <!-- UMKM 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1610970881699-44a5587cab2a?auto=format&fit=crop&w=600&q=80" alt="Kopi" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Kopi Bubuk Lokal</h3>
+                    <div class="rating">★★★★★</div>
+                    <p class="card-desc">"Kopi robusta olahan tradisional dengan aroma khas pegunungan."</p>
+                    <a href="#" class="btn btn-full">Detail</a>
+                </div>
+            </div>
+
+            <!-- UMKM 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1606502973842-f64bc27758eb?auto=format&fit=crop&w=600&q=80" alt="Kerajinan" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Kerajinan Bambu</h3>
+                    <div class="rating">★★★★☆</div>
+                    <p class="card-desc">"Kerajinan tangan anyaman bambu untuk dekorasi dan perabotan."</p>
+                    <a href="#" class="btn btn-full">Detail</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. Lihat Galeri -->
+    <section id="galeri" class="section-padding">
+        <h2 class="section-title">Galeri Desa</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=500&q=80" class="gallery-item" alt="Galeri 1">
+            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=500&q=80" class="gallery-item" alt="Galeri 2">
+            <img src="https://images.unsplash.com/photo-1590077983181-7cb31addcdbb?auto=format&fit=crop&w=500&q=80" class="gallery-item" alt="Galeri 3">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=500&q=80" class="gallery-item" alt="Galeri 4">
+        </div>
+    </section>
+
+    <!-- 7. Buka Maps -->
+    <section id="peta" class="section-padding bg-light">
+        <h2 class="section-title">Peta Interaktif & Sebaran UMKM</h2>
+        <div class="map-container">
+            <!-- Google Maps Embed Placeholder -->
+            <iframe src="https://maps.google.com/maps?q=Desa%20Lopang,%20Kecamatan%20Kembangbahu,%20Kabupaten%20Lamongan&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- 8. Hubungi Desa -->
+    <footer id="kontak">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Kantor Desa Lopang</h3>
+                <p>Jl. Raya Desa No. 1</p>
+                <p>Kecamatan Contoh, Kabupaten Contoh</p>
+                <p>Provinsi Jawa Timur, 65111</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hubungi Kami</h3>
+                <p>📞 0812-3456-7890</p>
+                <p>✉️ pemdes@lopang.desa.id</p>
+            </div>
+            <div class="footer-col">
+                <h3>Jam Pelayanan</h3>
+                <p>Senin - Kamis : 08.00 - 15.00 WIB</p>
+                <p>Jumat : 08.00 - 11.00 WIB</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pemerintah Desa Lopang. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

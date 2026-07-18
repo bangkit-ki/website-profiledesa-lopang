@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #4F6F52;
+  --secondary: #739072;
+  --light: #F4F7F4; /* Softer, harmonious light green/gray */
+  --accent: #E1E8D5;
+  --dark: #2C3E30;
+  --text: #4A4A4A;
+  --bg: #FAFAFA; /* Smoother off-white */
+  --rating: #FFB800;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; color: var(--dark); }
+a { text-decoration: none; color: inherit; }
+
+/* NAVBAR */
+.navbar {
+  position: fixed; top: 0; width: 100%;
+  background: rgba(253, 253, 253, 0.95);
+  backdrop-filter: blur(10px); z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 5%;
+}
+.logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.5rem; color: var(--primary); display: flex; align-items: center; gap: 10px; }
+.nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;}
+.nav-links a { font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
+.nav-links a:hover { color: var(--primary); }
+.menu-toggle { display: none; cursor: pointer; font-size: 1.5rem; color: var(--primary); }
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(44, 62, 48, 0.6), rgba(44, 62, 48, 0.6)), url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+  display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 20px;
+}
+.hero-content h1 { color: white; font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.hero-content p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; margin: 0 auto 2rem; }
+
+/* SECTIONS */
+.section-padding { padding: 6rem 5% 4rem; } /* Extra top padding for navbar */
+.section-title { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--primary); }
+.section-subtitle { text-align: center; max-width: 700px; margin: -2rem auto 3rem; color: var(--text); }
+.bg-light { background-color: var(--light); }
+
+/* TIMELINE (Sejarah) */
+.timeline {
+  display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto; position: relative;
+}
+.timeline::before {
+  content: ''; position: absolute; left: 15px; top: 0; bottom: 0; width: 2px; background: var(--secondary);
+}
+.timeline-item {
+  position: relative; padding-left: 50px;
+}
+.timeline-item::before {
+  content: ''; position: absolute; left: 6px; top: 5px; width: 20px; height: 20px; border-radius: 50%; background: var(--primary);
+}
+.timeline-item h3 { margin-bottom: 0.5rem; }
+
+/* LISTS (Lembaga & Demografi) */
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+.info-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--accent); }
+.info-card h4 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--primary); }
+.info-card ul { padding-left: 1.2rem; }
+.info-card ul li { margin-bottom: 0.5rem; }
+
+/* GRIDS (Dusun & UMKM) */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.04); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.card-img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+.card-title { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--dark); }
+.card-subtitle { font-size: 0.9rem; color: var(--secondary); margin-bottom: 1rem; font-weight: 500;}
+.card-desc { font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1; }
+.rating { color: var(--rating); font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+/* GALERI */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.gallery-item { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; }
+.gallery-item:hover { transform: scale(1.02); }
+
+/* BUTTONS */
+.btn { display: inline-block; padding: 0.8rem 2rem; background-color: var(--primary); color: white; border-radius: 30px; font-weight: 500; transition: background 0.3s, transform 0.3s; text-align: center; border: none; cursor: pointer; }
+.btn:hover { background-color: var(--dark); transform: translateY(-2px); }
+.btn-outline { display: inline-block; padding: 0.6rem 1.5rem; border: 2px solid var(--primary); color: var(--primary); border-radius: 30px; font-weight: 500; transition: all 0.3s; text-align: center; }
+.btn-outline:hover { background-color: var(--primary); color: white; }
+.btn-full { width: 100%; margin-top: auto; }
+
+/* MAPS */
+.map-container { width: 100%; height: 400px; background: #ddd; border-radius: 15px; overflow: hidden; position: relative; }
+.map-container iframe { width: 100%; height: 100%; border: none; }
+
+/* TABLE (UMKM Detail) */
+.product-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.product-table th, .product-table td { border-bottom: 1px solid #ddd; padding: 1rem 0; text-align: left; }
+.product-table th { color: var(--dark); }
+
+/* FOOTER */
+footer { background-color: var(--dark); color: white; padding: 4rem 5% 2rem; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+.footer-col h3 { color: white; margin-bottom: 1.5rem; }
+.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.8; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: white; padding: 1rem; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+  .nav-links.active { display: flex; }
+  .nav-links a { padding: 10px 0; border-bottom: 1px solid #eee; text-align: center; }
+  .menu-toggle { display: block; }
+}
+
+/* Detail Pages Layout */
+.detail-header { position: relative; height: 50vh; min-height: 350px; background: #333; color: white; display: flex; align-items: flex-end; padding: 3rem 5%; }
+.detail-header img { position: absolute; top:0; left:0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; z-index: 0; }
+.detail-title { position: relative; z-index: 1; max-width: 800px; }
+.detail-title h1 { color: white; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.detail-title p { font-size: 1.2rem; }
+.detail-content { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; padding: 4rem 5%; }
+@media (max-width: 768px) { .detail-content { grid-template-columns: 1fr; } }
